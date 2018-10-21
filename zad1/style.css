@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: rgb(19, 19, 19);
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #C7A761;
+    
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    background-color: #3B4B5A;
+}
+.column{
+    max-width: 50%;
+    flex: 50%;
+}
+#download{
+    background-color: #ffc65d;
+    width: 70%;
+    margin: 15%;
+}
+#download a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+}
+.column ul li{
+    list-style-type: none;
+    color: #C7A761;
+    padding: 2%;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 800px)
+{
+    .button{
+        flex-direction: column;
+        height: 60%;
+    }
+    .column{
+        max-width: 100%;
+        flex: 100%;
+    }
+    .column ul li{
+        font-size: 2.7vw;
+    }
+    #download{
+        margin: 15%;
+    }
+    #download a{
+        font-size: 4vw;
+    }
+}
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        height: auto;
+    }
+}
+.forma{
+    background-color:#3B4B5A;
+    padding: 20px;
+    
+
+
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(255, 169, 99);
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit] {
+    background-color: rgb(255, 140, 74);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: #ffc65d;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 12px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 12px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.snimak{
+
+
+    float: left;
+    width: 30%;
+    
+    
+    padding: 20px;
+}
+.osnimku {
+    float: left;
+    padding: 20px;
+    width: 70%;
+ 
+    color: #ffc65d;
+
+}
+section{
+    background-color: #303030
+}
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    .snimak,.osnimku {
+        width: 100%;
+        height: auto;
+    }
+}
+.prednosti{
+background-color: rgb(201, 201, 201);
+padding:20px;
+
+
+
+}
+.kolona {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .red::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+h3{
+    color: #fce2b1;
+}
+footer {
+    background-color:#3B4B5A;;
+    padding: 10px;
+    text-align: center;
+    color:  #fac991;
+}
+@media (max-width: 500px) {
+    footer {
+        width: 100%;
+        height: auto;
+    }
+}

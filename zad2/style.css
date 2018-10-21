@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    opacity: 1;
+}
+
+#header
+{
+    max-width: 100%;
+    background-color: rgb(170, 162, 162);
+    padding: 2%;
+}
+
+#header a
+{
+    text-decoration: none;
+}
+
+#header ul
+{
+    list-style-type: none;
+    float: right;
+}
+
+#header li
+{
+    display: inline;
+}
+
+#header li:hover
+{
+    background-color: rgb(137, 124, 138);
+}
+
+#header:first-child
+{
+    font-size: 2vw;
+}
+
+#text
+{
+    width: 100%;
+    padding: 3%;
+}
+
+#text p
+{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    font-style: italic;
+    color: rgb(127, 49, 141);
+    font-weight: bold;
+}
+
+#about
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#info
+{
+    color: rgba(127, 49, 141, 0.7);
+    flex: 50%;
+    max-width: 50%;
+    padding: 5%;
+    margin: auto;
+    font-size: 1.5vw;
+}
+
+#about img
+{
+    flex: 50%;
+    max-width: 50%;
+}
+
+#about  ul
+{
+    list-style-type: none; 
+    padding: 0;
+}
+
+#about ul li
+{
+    display: inline-block;
+}
+
+i
+{
+    color: rgb(44, 122, 37);
+}
+
+#button
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.column
+{
+    flex: 50%;
+    max-width: 50%;
+}
+
+.column p
+{
+    color: grey;
+    font-size: 0.7vw;
+    padding: 1% 10%;
+    justify-content: center;
+}
+
+iframe
+{
+    margin: 5%;
+}
+
+#button button
+{
+    background-color: rgb(44, 122, 37);
+    font-size: 2.5vw;
+    padding: 2%;
+    border-radius: 3%;
+    color: white;
+    font-weight: bold;
+    border-color: grey;
+    display: inline;
+}
+
+#btn i
+{
+    display: inline;
+    font-size: 4vw;
+}
+
+#button i:first-of-type
+{
+    margin-left: 10%;
+}
+
+button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+  #slider {
+    width: 80%;
+    margin: 5%;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  }
+   
+    #slider img {
+          width: 20%;
+          height: 20%;
+        }
+  
+    #description, #faq{
+      display: inline;
+      padding: 2%;
+      line-height: 50px;
+      font-size: 1.5vw;
+      color: rgb(44, 122, 37);
+      text-decoration: none;      
+    }
+    
+    #div2
+    {
+        display: none;
+    }
+
+    #div1 p, #div2 p
+    {
+        font-size: 1.3vw;
+        font-family: "Athiti";
+    }
+
+    .mySlides p
+    {
+        padding: 5%;
+    }
+
+    #slider a
+    {
+        cursor: -webkit-grab;
+    }
+
+    #footer
+    {
+        max-width: 100%;
+        background-color: rgb(170, 162, 162);
+        padding: 3%;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    #footer a
+    {
+        padding: 5%;
+    }
+
+    #footer p
+    {
+        font-size: 1vw;
+        color: rgb(44, 122, 37);
+        padding: 2%;
+    }
+
+    #galery
+    {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background-color: rgba(41, 39, 39, 0.8);
+    }
+
+    #galery ul {
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        transition: all 750ms ease;
+        left: 0;
+    }
+
+    #galery li {
+        height: 100%;
+        width: 100%;
+    }
+
+    #galery img {
+        position: relative;
+        top: 30%;
+        left: 35%;
+        width: 30%;
+        height: 40%;
+        padding: 0;
+      }
+
+      #prev, #next{
+        width: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 2rem;
+        text-shadow: 0 0 20px rgba(0,0,0,0.6);
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 150ms ease;
+      }
+
+      #prev {  
+        left: 10px;
+      }
+
+      #next {
+        right: 10px;
+      }
+
+      #close
+      {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 1.5rem;
+          color: white;
+          text-decoration: none;
+      }
+      
+      @media only screen and (max-width: 750px)
+      {
+        #button
+        {
+            flex-direction: column;
+        }
+        .column
+        {
+            flex: 100%;
+            max-width: 100%;
+        }
+        #about
+        {
+            flex-direction: column-reverse;
+        }
+        #info
+        {
+            flex: 100%;
+            max-width: 100%;
+        }
+        #about img
+        {
+            flex: 100%;
+            max-width: 100%;
+        }
+        #header:first-child
+        {
+            font-size: 3.5vw;
+            padding: 10%;
+        }
+        #info
+        {
+            font-size: 3.5vw;
+        }
+        #btn i, #btn button
+        {
+           font-size: 6vw;
+        }
+        .column p
+        {
+            font-size: 2vw;
+        }
+        #description, #faq
+        {
+            font-size: 3.5vw;
+        }
+        #div1 p, #div2 p
+        {
+            font-size: 3vw;
+        }
+        #slider img
+        {
+            height: 35%;
+            width: 35%;
+        }
+        #footer i 
+        {
+            font-size: 4vw;
+        }
+        #footer p
+        {
+            font-size: 2.5vw;
+        }
+        #galery img {
+            position: relative;
+            top: 30%;
+            left: 20%;
+            width: 60%;
+            height: 40%;
+            padding: 0;
+          }
+      }

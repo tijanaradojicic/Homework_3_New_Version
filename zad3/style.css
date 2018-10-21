@@ -1,0 +1,70 @@
+body{
+    background:url("pozadina.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+div{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+}
+.avion{
+display: block;
+width: 50%;
+height: auto;
+
+top:25%;
+    position:absolute;
+    -webkit-animation: let1 8s;
+    -webkit-animation-fill-mode: forwards;
+
+    
+}
+@-webkit-keyframes let1{
+    0% { left: -400px;}
+    
+    100%{ left: 130%; opacity: 0%;}
+
+
+}
+.homepage{
+font-size: 5vw;
+height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: tekst 10s;
+  color:rgb(51, 51, 51);
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes tekst{
+from{opacity: 0;}
+to{opacity:1;}
+
+}
+
+@media only screen and (max-width: 800px)
+{
+    .homepage
+    {
+        font-size: 8vw;
+    }
+    .avion
+    {
+        width: 80%;
+        height: auto;
+    }
+    .anim
+    {
+        max-width: 100%;
+        overflow-x: hidden;
+        display: block;
+    }
+}
